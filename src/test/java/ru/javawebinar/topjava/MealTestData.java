@@ -6,6 +6,7 @@ import ru.javawebinar.topjava.model.UserMeal;
 import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import static java.time.LocalDateTime.of;
 import static ru.javawebinar.topjava.model.BaseEntity.START_SEQ;
