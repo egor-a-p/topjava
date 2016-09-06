@@ -24,11 +24,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * User: gkislin
- * Date: 26.08.2014
- */
-
 @Repository
 @Transactional(readOnly = true)
 public class JdbcUserRepositoryImpl implements UserRepository {
@@ -100,7 +95,7 @@ public class JdbcUserRepositoryImpl implements UserRepository {
             final private Role role;
             final private int userId;
 
-            private UserRole(Role role, int userId) {
+            UserRole(Role role, int userId) {
                 this.role = role;
                 this.userId = userId;
             }
