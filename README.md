@@ -1,7 +1,7 @@
 Calories Managment
 ===============================
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd10a882fc3048a2bbdc5c347fa4fac3)](https://www.codacy.com/app/egor-a-petrov/topjava/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd10a882fc3048a2bbdc5c347fa4fac3)](https://www.codacy.com/app/egor-a-petrov/topjava/dashboard)
 ### <a href="http://topjava.herokuapp.com/" target=_blank>Демо разрабатываемого приложения</a>
 #### Технологии
 Spring Security, Spring MVC, Spring Data JPA, Spring Security Test, Hibernate ORM, JDBC, Hibernate Validator, SLF4J, Json Jackson, JSP, JSTL, Apache Tomcat, WebJars, DataTables plugin, Ehcache, PostgreSQL, JUnit, Hamcrest, jQuery, jQuery notification, Bootstrap.
