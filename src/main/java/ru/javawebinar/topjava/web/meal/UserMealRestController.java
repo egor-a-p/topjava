@@ -18,7 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = UserMealRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserMealRestController extends AbstractUserMealController {
-    static final String REST_URL = "/rest/profile/meals";
+    public static final String REST_URL = "/rest/profile/meals";
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public UserMeal get(@PathVariable("id") int id) {
