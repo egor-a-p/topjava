@@ -103,10 +103,8 @@
 <script type="text/javascript" src="webjars/datatables/1.10.12/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="webjars/noty/2.3.8/js/noty/packaged/jquery.noty.packaged.min.js"></script>
 <script type="text/javascript" src="resources/js/datatablesUtil.js"></script>
-<script type="text/javascript">
-
-    var ajaxUrl = 'ajax/admin/users/';
-    var datatableApi;
+<script type="text/javascript" src="resources/js/userDatatables.js"></script>
+<%--
 
     // $(document).ready(function () {
     $(function () {
@@ -147,5 +145,6 @@
         });
         makeEditable();
     });
-</script>
+--%>
+
 </html>
