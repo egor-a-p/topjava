@@ -105,7 +105,7 @@ public class User extends NamedEntity {
     }
 
     public Date getRegistered() {
-        return registered;
+        return (Date) registered.clone();
     }
 
     public void setRegistered(Date registered) {

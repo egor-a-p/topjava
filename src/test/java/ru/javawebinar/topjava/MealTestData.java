@@ -6,8 +6,8 @@ import ru.javawebinar.topjava.to.UserMealWithExceed;
 
 import java.time.Month;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 import static java.time.LocalDateTime.of;
 import static ru.javawebinar.topjava.model.BaseEntity.START_SEQ;
@@ -29,7 +29,7 @@ public class MealTestData {
     public static final UserMeal ADMIN_MEAL = new UserMeal(ADMIN_MEAL_ID, of(2015, Month.JUNE, 1, 14, 0), "Админ ланч", 510);
     public static final UserMeal ADMIN_MEAL2 = new UserMeal(ADMIN_MEAL_ID + 1, of(2015, Month.JUNE, 1, 21, 0), "Админ ужин", 1500);
 
-    public static final List<UserMeal> USER_MEALS = Arrays.asList(MEAL6, MEAL5, MEAL4, MEAL3, MEAL2, MEAL1);
+    public static final List<UserMeal> USER_MEALS = Collections.unmodifiableList(Arrays.asList(MEAL6, MEAL5, MEAL4, MEAL3, MEAL2, MEAL1));
 
     public static UserMeal getCreated() {
         return new UserMeal(null, of(2015, Month.JUNE, 1, 18, 0), "Созданный ужин", 300);

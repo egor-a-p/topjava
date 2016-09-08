@@ -17,7 +17,7 @@ public class ErrorInfo {
     }
 
     public String[] getDetails() {
-        return details;
+        return details.clone();
     }
 
     public String getCause() {

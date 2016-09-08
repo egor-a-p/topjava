@@ -53,6 +53,7 @@ public class ModelMatcher<T> {
 
         @Override
         public boolean equals(Object o) {
+            if (o == null) return false;
             if (this == o) return true;
             EntityWrapper<T> that = (EntityWrapper<T>) o;
             return entity != null ? entityComparator.compare(entity, that.entity) : that.entity == null;
