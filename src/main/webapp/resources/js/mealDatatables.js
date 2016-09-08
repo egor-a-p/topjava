@@ -64,7 +64,7 @@ $(function () {
 
             var startDate = $('#startDate');
             var endDate = $('#endDate');
-            
+
             startDate.datetimepicker({
                 timepicker: false,
                 format: 'Y-m-d',

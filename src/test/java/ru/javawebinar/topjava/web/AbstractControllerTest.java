@@ -32,7 +32,7 @@ import static ru.javawebinar.topjava.Profiles.DB_IMPLEMENTATION;
 @ActiveProfiles({ACTIVE_DB, DB_IMPLEMENTATION})
 abstract public class AbstractControllerTest {
 
-    private static final CharacterEncodingFilter CHARACTER_ENCODING_FILTER = new CharacterEncodingFilter();
+    public static final CharacterEncodingFilter CHARACTER_ENCODING_FILTER = new CharacterEncodingFilter();
 
     static {
         CHARACTER_ENCODING_FILTER.setEncoding("UTF-8");
@@ -51,7 +51,7 @@ abstract public class AbstractControllerTest {
     private WebApplicationContext webApplicationContext;
 
     @PostConstruct
-    private void postConstruct() {
+    public void postConstruct() {
         mockMvc = MockMvcBuilders
                 .webAppContextSetup(webApplicationContext)
                 .addFilter(CHARACTER_ENCODING_FILTER)

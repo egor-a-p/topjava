@@ -1,9 +1,6 @@
 package ru.javawebinar.topjava.util.exception;
 
-/**
- * User: gkislin
- * Date: 19.08.2014
- */
+
 public class ErrorInfo {
     private final String url;
     private final String cause;
@@ -17,5 +14,17 @@ public class ErrorInfo {
         this.url = requestURL.toString();
         this.cause = cause;
         this.details = details;
+    }
+
+    public String[] getDetails() {
+        return details;
+    }
+
+    public String getCause() {
+        return cause;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }
